@@ -1,0 +1,929 @@
+/****************************************
+          =  Couleurs
+Or : #a27828
+Or hover : #cd9833
+gris foncé : #272727
+gris claire (background page) : #e5e5e5
+
+*****************************************/
+
+
+/**********************************************************************/
+/* Eléments de style pour toute la page et toutes les tailles d'écran */
+/**********************************************************************/
+@font-face {
+  font-family: "Lora";
+  src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+}
+
+html,
+body {
+  background-color: #e5e5e5;
+  font-family: "Lora";
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  transition: .3s all ease-in-out;
+}
+
+button:hover {
+  background-color: #cd9833;
+  transform: scale(1.1);
+  transition: .3s all ease-in-out;
+}
+
+
+/*******************/
+/*   = DESKTOP   */
+/*******************/
+
+/*****************************************/
+/* = Menu Desktop, partie fixée à Gauche */
+/*               #Desktop                */
+/*****************************************/
+.menu {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  position: fixed ;
+  top: 0;
+  width: 22vw;
+}
+
+.imageMenu {
+  margin-bottom: 10%;
+  width: 85%;
+}
+
+#ulMenu {
+  margin-bottom: 10%;
+}
+
+.liMenu {
+  margin-bottom: 2%;
+}
+
+.lienMenu {
+  color: #a27828;
+  font-size: 23px;
+}
+
+.lienMenu:hover {
+  color: #cd9833;
+  text-decoration: underline;
+}
+
+.hrMenu {
+  border-top: medium double;
+  color: #a27828;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+.lienBoutonMenu {
+  background-color: #a27828;
+  height: 7%;
+  margin: auto;
+  width: 50%;
+}
+
+.boutonMenu {
+  background-color: #a27828;
+  border-color: #a27828;
+  font-size: 17px;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+.contentMenuMobile {
+  display: none;
+}
+
+/***************/
+/*  = Accueil  */
+/*   #Desktop  */
+/***************/
+header {
+  background-image: url("images/carpa-stjacques-truffes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 3px 5px #a27828;
+  display: flex;
+  filter: brightness(75%);
+  height: 100vh;
+  margin-left: 22vw;
+  width: 78vw;
+}
+
+.TitrePage {
+  color: white;
+  font-size: 80px;
+  margin: auto;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  width: 80%;
+}
+
+.hrAccueil {
+  border-top: medium double;
+  color: white;
+  width: 50%;
+}
+
+/*******************/
+/* = zone Articles */
+/*    #Desktop     */
+/*******************/
+.tousLesArticles {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 22vw;
+  width: 78vw;
+}
+
+/********************************/
+/* = Article Menu de la semaine */
+/*          #Desktop            */
+/********************************/
+#MenuRepas {
+  background-color: #272727;
+  box-shadow: 3px 3px #a27828;
+  margin: 10% auto 5% auto;
+  width: 45%;
+}
+
+.TitreMenuRepas {
+  color: #a27828;
+  font-size: 35px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.HrMenuRepas,
+.HrHoraires {
+  border-top: medium double;
+  color: #a27828;
+  width: 40%;
+}
+
+.petitsTitreMenu {
+  color: #a27828;
+  margin: 5% auto 4% auto;
+  text-align: center;
+  width: 85%;
+}
+
+.PMenuRepas {
+  color: white;
+  margin:5% auto 4% auto;
+  text-align: center;
+  width: 85%;
+}
+
+/**********************************************/
+/* = commun aux trois articles de présentation*/
+/*                  #Desktop                  */
+/**********************************************/
+.ArticlesALaSuites {
+  background-color: #272727;
+  margin: 10% auto 5% auto;
+  width: 60vw;
+}
+
+.alignerTextImage {
+  display: flex;
+  flex-direction: row;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.titreArticle {
+  color: #a27828;
+  font-size: 27px;
+  text-align: center;
+}
+
+.hrArticle {
+  border-top: medium double;
+  color: #a27828;
+  margin-bottom: 3%;
+  width: 40%;
+}
+
+.imgArticles {
+  margin: auto auto 3% auto;
+  width: 40%;
+}
+
+.imgArticles:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.PArticle {
+  color: white;
+  margin: 3% auto auto auto;
+  text-align: justify;
+  width: 90%;
+}
+
+.alignerTextBoutton {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+}
+
+.lienBoutton {
+  height: 15%;
+  margin: auto;
+  width: 35%;
+}
+
+.bouttonArticle {
+  background-color: #a27828;
+  border-color: #a27828;
+  height: 100%;
+  width: 100%;
+}
+
+/*******************************/
+/* = Article présentation Carte*/
+/*          #Desktop           */
+/*******************************/
+#ArticleCarte {
+  box-shadow: -3px 3px #a27828;
+  margin-right: 1%;
+}
+
+#PArticleCarteEtReservation {
+  margin-right: 10%;
+}
+
+/************************************/
+/* = Article présentation Restaurant*/
+/*              #Desktop            */
+/************************************/
+#Bienvenu {
+  box-shadow: 3px 3px #a27828;
+  margin-left:0px;
+}
+
+#PArticleBienvenu {
+  margin-left: 10%;
+}
+
+.ImgMobile {
+  display: none;
+}
+
+/************************/
+/* = Article réservation*/
+/*        #Desktop      */
+/************************/
+#ArticleReservation {
+  box-shadow: -3px 3px #a27828;
+  margin-right: 1%;
+}
+
+/*********************/
+/* = Article Horaires*/
+/*    #Desktop       */
+/*********************/
+#ArticleHoraires {
+  background-color: #272727;
+  box-shadow: 3px 3px #a27828;
+  margin: 10% auto 5% auto;
+  width: 50%;
+}
+
+.TitreHoraire {
+  color: #a27828;
+  text-align: center;
+}
+
+.tableHoraires {
+  color: white;
+  margin: 5% auto 10% auto;
+}
+
+/******************/
+/* = pied de page */
+/*    #Desktop    */
+/******************/
+footer {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 22vw;
+  width: 78vw;
+}
+
+.AlignerTrouverCarte {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  margin-left: 3%;
+  width: 100%;
+}
+
+.Trouver {
+  width: 30%;
+}
+
+.TitreTrouver {
+  color: #a27828;
+  text-align: center;
+}
+
+.trouverHr {
+  border-top: medium double;
+  color: #a27828;
+  width: 60%;
+}
+
+.trouverP {
+  color: white;
+  margin-left: 5%;
+}
+
+.maps {
+  height: 80%;
+  margin: auto;
+  width: 30%;
+
+}
+
+/*******************************************************************/
+/*                = Css de la version mobile                       */
+/*(version mobile dès <1023px pour une meilleur lisibilité du menu)*/
+/*                        #Mobile                                  */
+/*******************************************************************/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+  .menu {
+    display: none;
+  }
+
+  /*******************/
+  /* = Page d'accueil*/
+  /*      #Mobile    */
+  /*******************/
+  header {
+    margin-left: 0px;
+    width: 100vw;
+  }
+
+  .TitrePage {
+    font-size: 80px;
+  }
+
+
+  /*****************/
+  /* = Menu mobile */
+  /*    #Mobile    */
+  /*****************/
+  .contentMenuMobile {
+    display: flex;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 70vw;
+    z-index: 2;
+  }
+
+  .NavMobile {
+    height: 100vh;
+  }
+
+  #menuBurger {
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuBurger input {
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    opacity: 0;
+    position: absolute;
+    width: 40px;
+    z-index: 2;
+  }
+
+  #menuBurger span {
+    background: black;
+    border-radius: 3px;
+    box-shadow: 1px 1px #a27828;
+    display: flex;
+    height: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    width: 60px;
+    z-index: 1;
+  }
+
+  #menuBurger span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuBurger span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuBurger input:checked ~ span {
+    background: #36383F;
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+  }
+
+  #menuBurger input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuBurger input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menuMobile {
+    background-color: #272727;
+    box-shadow: 0 0 10px #85888C;
+    height: 100vh;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    width: 60vw;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #menuMobile li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menuMobile li a {
+    font-size: 50px;
+  }
+
+  #menuBurger input:checked ~ ul {
+    transform: none;
+  }
+
+  /******************/
+  /* = Zone articles*/
+  /*     #Mobile    */
+  /******************/
+  .tousLesArticles {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  /**************************/
+  /* css commun aux articles*/
+  /*        #Mobile         */
+  /**************************/
+  .ArticlesALaSuites {
+    background-color: #272727;
+    margin: 10% auto 5% auto;
+    width: 100%;
+  }
+
+  .titreArticle {
+    font-size: 35px;
+  }
+
+  .alignerTextImage {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .alignerTextBoutton {
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+  }
+
+  .PArticle {
+    font-size: 20px;
+    height: 20%;
+  }
+
+  .lienBoutton {
+    height: 75px;
+    margin: 3% auto auto 3%;
+    width: 25%;
+  }
+
+  .bouttonArticle {
+    background-color: #a27828;
+    border-color: #a27828;
+    color: black;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  /**************************/
+  /* = Article menu semaine */
+  /*         #Mobile        */
+  /**************************/
+  #MenuRepas {
+    width: 80%;
+  }
+
+  .TitreMenuRepas {
+    font-size: 40px;
+  }
+
+  .petitsTitreMenu {
+    font-size: 25px;
+  }
+
+  .PMenuRepas {
+    font-size: 20px;
+  }
+
+  /*******************************/
+  /* = Article presentation carte*/
+  /*          #Mobile            */
+  /*******************************/
+  #PArticleCarteEtReservation {
+    margin-bottom: 5%;
+  }
+
+  /************************************/
+  /* = Article présentation restaurant*/
+  /*             #Mobile              */
+  /************************************/
+  #PArticleBienvenu {
+    margin-bottom: 5%;
+  }
+
+  .ImgMobile {
+    display: flex;
+  }
+
+  .ImgDesktop {
+    display: none;
+  }
+
+  /**********************/
+  /* = Article Horaires */
+  /*       #Mobile      */
+  /**********************/
+  #ArticleHoraires {
+    width: 75%;
+  }
+
+  .tableHoraires {
+    font-size: 22px;
+  }
+
+  /****************/
+  /* Pied de page */
+  /*    #Mobile   */
+  /****************/
+  footer {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .AlignerTrouverCarte {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Trouver {
+    margin: auto;
+    width: 60%;
+  }
+
+  .TitreTrouver {
+    font-size: 25px;
+  }
+
+  .trouverP {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .maps {
+    height: 250px;
+    margin-bottom: 4%;
+    width: 60%;
+  }
+
+}
+
+/********************************************************************/
+/*      = Css de la version mobile pour très petits écrans          */
+/*                      #petitMobile                                */
+/********************************************************************/
+@media screen and (max-width:767px) {
+
+  .menu {
+    display: none;
+  }
+
+  /*******************/
+  /* = Page d'accueil*/
+  /*   #petitMobile  */
+  /*******************/
+  header {
+    margin-left: 0px;
+    width: 100vw;
+  }
+
+  .TitrePage {
+    font-size: 50px;
+  }
+
+
+  /*****************/
+  /* = Menu mobile */
+  /*  #petitMobile */
+  /*****************/
+  .contentMenuMobile {
+    display: flex;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 65vw;
+    z-index: 2;
+  }
+
+  .NavMobile {
+    height: 100vh;
+  }
+
+  #menuBurger {
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuBurger input {
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    opacity: 0;
+    position: absolute;
+    width: 40px;
+    z-index: 2;
+  }
+
+  #menuBurger span {
+    background: black;
+    border-radius: 3px;
+    box-shadow: 1px 1px #a27828;
+    display: flex;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    width: 40px;
+    z-index: 1;
+  }
+
+  #menuBurger span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuBurger span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuBurger input:checked ~ span {
+    background: #36383F;
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+  }
+
+  #menuBurger input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuBurger input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menuMobile {
+    background-color: #272727;
+    box-shadow: 0 0 10px #85888C;
+    height: 100vh;
+    margin: -50px 0 0 -50px;
+    padding: 125px 50px 50px 50px;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    width: 60vw;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #menuMobile li {
+    padding: 6px 0;
+    transition-delay: 2s;
+  }
+
+  #menuMobile li a {
+    font-size: 20px;
+  }
+
+  #menuBurger input:checked ~ ul {
+    transform: none;
+  }
+
+  /******************/
+  /* = Zone articles*/
+  /*  #petitMobile  */
+  /******************/
+  .tousLesArticles {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  /****************************/
+  /* = css commun aux articles*/
+  /*       #petitMobile       */
+  /****************************/
+  .ArticlesALaSuites {
+    background-color: #272727;
+    margin: 10% auto 5% auto;
+    width: 100%;
+  }
+
+  .titreArticle {
+    font-size: 30px;
+  }
+
+  .alignerTextImage {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .alignerTextBoutton {
+    flex-direction: row;
+    margin: auto;
+    width: 95%;
+  }
+
+  .PArticle {
+    font-size: 15px;
+    height: 20%;
+  }
+
+  .lienBoutton {
+    height: 75px;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 20%;
+  }
+
+  .bouttonArticle {
+    background-color: #a27828;
+    border-color: #a27828;
+    color: black;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*************************/
+  /* = Article menu semaine*/
+  /*     #petitMobile      */
+  /*************************/
+  #MenuRepas {
+    width: 100%;
+  }
+
+  .TitreMenuRepas {
+    font-size: 35px;
+  }
+
+  .petitsTitreMenu {
+    font-size: 20px;
+  }
+
+  .PMenuRepas {
+    font-size: 18px;
+  }
+
+  /*******************************/
+  /* = Article presentation carte*/
+  /*         #petitMobile        */
+  /*******************************/
+  #PArticleCarteEtReservation,
+  #PArticleBienvenu {
+    margin: auto auto 5% auto;
+  }
+
+  /************************************/
+  /* = Article présentation restaurant*/
+  /*         #petitMobile             */
+  /************************************/
+
+ /* gestion de la marge au dessus (#PArticleBienvenu) pour éviter la duplication*/
+
+  .ImgMobile {
+    display: flex;
+  }
+
+  .ImgDesktop {
+    display: none;
+  }
+
+  /**********************/
+  /* = Article Horaires */
+  /*    #petitMobile    */
+  /**********************/
+  #ArticleHoraires {
+    width: 100%;
+  }
+
+  .tableHoraires {
+    font-size: 15px;
+  }
+
+  /******************/
+  /* = Pied de page */
+  /*  #petitMobile  */
+  /******************/
+  footer {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .AlignerTrouverCarte {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Trouver {
+    margin: auto;
+    width: 100%;
+  }
+
+  .TitreTrouver {
+    font-size: 25px;
+  }
+
+  .trouverP {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .maps {
+    height: 250px;
+    margin-bottom: 4%;
+    width: 60%;
+  }
+
+}

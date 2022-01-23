@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta name="viewport" charset="utf-8">
+  <title>Hotel Restaurant La Wantzenau</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de la version Desktop, Zone fixée à gauche -->
+  <aside class="menu">
+    <img class="imageMenu" src="images/Logo.png" alt="logo"/>
+    <hr class="hrMenu">
+    <nav>
+      <ul id="ulMenu">
+        <li class="liMenu"><a class="lienMenu" href="#">Accueil</a></li>
+        <li class="liMenu"><a class="lienMenu" href="#MenuRepas">Menu de la semaine</a></li>
+        <li class="liMenu"><a class="lienMenu" href="#ArticleCarte">Carte</a></li>
+        <li class="liMenu"><a class="lienMenu" href="#Bienvenu">Bienvenu au Restaurant</a></li>
+        <li class="liMenu"><a class="lienMenu" href="#ArticleReservation">Réservez votre Table</a></li>
+        <li class="liMenu"><a class="lienMenu" href="#ArticleHoraires">Horaires</a></li>
+        <li class="liMenu"><a class="lienMenu" href="https://lemoulin-hotelspa.alsace/">L'hôtel</a></li>
+        <li class="liMenu"><a class="lienMenu" href="http://www.oberges-moulin.fr/">O'Berges</a></li>
+        <li class="liMenu"><a class="lienMenu" href="http://www.restaurant-moulin-wantzenau.fr/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr class="hrMenu">
+    <a class="lienBoutonMenu" href="http://www.restaurant-moulin-wantzenau.fr/contact.html">
+      <button class="boutonMenu" type="button" name="button">Réservation</button>
+    </a>
+  </aside>
+
+  <!-- Menu de la version Mobile, menu burger et zone superposée contenant le menu -->
+  <div class="contentMenuMobile">
+    <nav class="NavMobile" role="navigation">
+      <div id="menuBurger">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menuMobile">
+          <li class="liMenu"><a class="lienMenu" href="#">Accueil</a></li>
+          <li class="liMenu"><a class="lienMenu" href="#MenuRepas">Menu de la semaine</a></li>
+          <li class="liMenu"><a class="lienMenu" href="#ArticleCarte">Carte</a></li>
+          <li class="liMenu"><a class="lienMenu" href="#Bienvenu">Bienvenu au Restaurant</a></li>
+          <li class="liMenu"><a class="lienMenu" href="#ArticleReservation">Réservez votre Table</a></li>
+          <li class="liMenu"><a class="lienMenu" href="#ArticleHoraires">Horaires</a></li>
+          <li class="liMenu"><a class="lienMenu" href="https://lemoulin-hotelspa.alsace/">L'hôtel</a></li>
+          <li class="liMenu"><a class="lienMenu" href="http://www.oberges-moulin.fr/">O'Berges</a></li>
+          <li class="liMenu"><a class="lienMenu" href="http://www.restaurant-moulin-wantzenau.fr/contact.html">Contact</a></li>
+          <li class="liMenu"><a class="lienMenu" href="http://www.restaurant-moulin-wantzenau.fr/contact.html">Réserver</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Accueil de la page -->
+  <header>
+    <h1 class="TitrePage">Restaurant Au Moulin de la Wantzenau<hr class="hrAccueil"></h1>
+  </header>
+
+  <!-- Zone contenant tous les articles -->
+  <section class="tousLesArticles">
+    <!-- Carte menu de la semaine -->
+    <article id="MenuRepas">
+      <h2 class="TitreMenuRepas">Menu</h2>
+      <hr class="HrMenuRepas">
+      <p class="PMenuRepas">Entrée, Plat, Dessert à 24 € </br></br>Entrée, Plat </br>OU </br>Plat, Dessert </br>OU</br> Entrée, Dessert à 19 € </br></p>
+      <p class="petitsTitreMenu">***</br>ENTRÉE</p>
+      <p class="PMenuRepas"> Carpaccion de saumon, Lime et ciboulette</br> OU </br>Oeuf en meurette </br></p>
+      <p class="petitsTitreMenu"> *** </br>PLAT</p>
+      <p class="PMenuRepas">Dos de cabillaud, Petits légumes vapeur jus court de langoustines</br> OU</br> Suprême de poulet jaune aux girolles</br></p>
+      <p class="petitsTitreMenu"> *** </br>DESSERT</p>
+      <p class="PMenuRepas">Assiette de fromages</br> OU</br> Pain perdu, Quetsches poêlées, Glace cannelle</p>
+    </article>
+
+    <!-- Article présentant la carte -->
+    <article id="ArticleCarte" class="ArticlesALaSuites">
+      <h2 class="titreArticle">Notre Carte</h2>
+      <hr class="hrArticle">
+      <div class="alignerTextImage">
+        <img class="imgArticles" src="images/homard.jpg">
+        <div class="alignerTextBoutton">
+          <p id="PArticleCarteEtReservation" class="PArticle">Héritier d’une famille de cuisiniers, Philippe Clauss s’imprègne de la poésie de la nature qui entoure le restaurant pour prépare des mets au goût vrai, aux parfums subtils. Découvrez une carte raffinée qui saura satisfaire toutes les envies. Petits et grands trouveront de quoi combler leur appétit.</p>
+          <a class="lienBoutton" href="http://www.restaurant-moulin-wantzenau.fr/la-carte.html">
+            <button class="bouttonArticle" type="button" name="button">En savoir plus</button>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Article de présentation du restaurant -->
+    <article id="Bienvenu" class="ArticlesALaSuites">
+      <h2 class="titreArticle">Bienvenue au restaurant</h2>
+      <hr class="hrArticle">
+      <div class="alignerTextImage">
+        <img class="imgArticles ImgMobile" src="images/enseigne.jpg">
+        <div class="alignerTextBoutton">
+          <p id="PArticleBienvenu" class="PArticle">Le Restaurant Au Moulin de La Wantzenau vous accueille toute l’année au sein de son établissement pour vous faire découvrir ses spécialités alliant saveurs du terroir alsacien et qualité des produits utilisés pour des plats originaux au goût unique. Faites voyager vos papilles !</p>
+          <a class="lienBoutton" href="http://www.restaurant-moulin-wantzenau.fr/presentation-restaurant.html">
+            <button class="bouttonArticle" type="button" name="button">En savoir plus</button>
+          </a>
+        </div>
+        <img class="imgArticles ImgDesktop" src="images/enseigne.jpg">
+      </div>
+    </article>
+
+    <!-- Article de réservation -->
+    <article id="ArticleReservation" class="ArticlesALaSuites">
+      <h2 class="titreArticle">Réservez votre table</h2>
+      <hr class="hrArticle">
+      <div class="alignerTextImage">
+        <img class="imgArticles" src="images/salle.jpg">
+        <div class="alignerTextBoutton">
+          <p id="PArticleCarteEtReservation" class="PArticle">Vous souhaitez découvrir les plats alléchants qui figurent sur notre carte ? Réservez dès maintenant votre table dans notre Restaurant Au Moulin de la Wantzenau et faites le choix de la qualité. Nous vous recevrons avec plaisir à la date de votre choix et saurons vous apporter un accueil chaleureux.</p>
+          <a class="lienBoutton" href="http://www.restaurant-moulin-wantzenau.fr/contact.html">
+            <button class="bouttonArticle" type="button" name="button">En savoir plus</button>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Article avec le tableau des Horaires -->
+    <article id="ArticleHoraires">
+      <h2 class="TitreHoraire">Horaires</h2>
+      <hr class="HrHoraires">
+      <table class="tableHoraires">
+        <tbody>
+          <tr class="lignesHoraires">
+            <td>Mercredi</td>
+            <td>12:00 - 14:00 et 19:00 - 21h30</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>12:00 - 14:00 et 19:00 - 21h30</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>12:00 - 14:00 et 19:00 - 21h30</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>12:00 - 14:00 et 19:00 - 21h30</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td>12:00 - 14:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </section>
+
+  <!-- pied de page contenant les informations de contact et la carte -->
+  <footer>
+    <div class="AlignerTrouverCarte">
+      <section class="Trouver">
+        <h3 class="TitreTrouver">Nous Trouver</h3>
+        <hr class="trouverHr">
+        <p class="trouverP">2 impasse du moulin </br>67610 La Wantzenau </br>Téléphone: 03 88 96 20 01</br>Email: philippe.clauss@wanadoo.fr</p>
+      </section>
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10543.609172273456!2d7.80050323772245!3d48.64998434449813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c6875bcda265%3A0x4aaefc3e6253316e!2sRestaurant%20Au%20Moulin%20de%20la%20Wantzenau!5e0!3m2!1sfr!2sfr!4v1632484903805!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+  </footer>
+</body>
+</html>
