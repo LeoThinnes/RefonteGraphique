@@ -3,3 +3,6 @@ Ce projet etait de refaire le visuel du site d'un site web. Le site web en quest
 
 </br></br>
 Ma proposition de visuel est disponible [ici](https://leothinnes.com/restaurant)
+
+Voici un petit apperçu : </br>
+![](/images/restaurant.png)
